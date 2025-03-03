@@ -16,18 +16,22 @@
   <!-- Cargar Tailwind CSS-->
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-
-  <title>Frontend Mentor | Social links profile</title>
-
+    <style type="text/tailwindcss">
+      @theme {
+        /* Color personalizado */
+        --color-primary-green: hsl(75, 94%, 57%);
+      }
+    </style>  <title>Frontend Mentor | Social links profile</title>
+  
 </head>
 
-<body class="bg-gray-950 h-screen flex items-center justify-center">
+<body class="bg-primary-green h-screen flex items-center justify-center">
 
-  <div class="bg-gray-900 text-white flex flex-col p-4 rounded-lg">
+  <div class="bg-gray-900 text-white flex flex-col  rounded-lg p-8">
     <div class="flex flex-col items-center text-center">
       <img class="size-20 rounded-3xl" src="assets/images/avatar-jessica.jpeg" alt="profile">
-      <h1 class="text-3xl sm:text-red-700 ">Jessica Randall</h1>
-      <p class="text-lime-300">London, United Kingdom</p>
+      <h1 class="text-3xl">Jessica Randall</h1>
+      <p class="text-primary-green">London, United Kingdom</p>
       <div class="text-gray-300 my-2">"Front-end developer and avid reader."</div>
 
     </div>
